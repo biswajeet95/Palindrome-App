@@ -1,0 +1,94 @@
+*:before,
+*:after{
+  box-sizing:border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0 ;
+    position: relative;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins' , sans-serif;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    background: linear-gradient(to left, #5d47ff,#9e22ff ,#58c295);
+    padding:1em;
+}  
+.container {
+    position: relative;
+    width: 600px;
+    background: #323644;
+    padding:1.5rem 1rem;
+    border-radius:10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0.5);
+}
+
+.container h4{
+    font-weight: 300;
+    color:#fff;
+    font-size:1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container label{
+    position:relative;
+    color:#fff;
+    display:inline-block;
+    left:0.5rem;
+    margin-bottom:0.5rem;
+}
+
+.container input {
+ width:100%;
+ background: #5d647e;
+ border:none;
+ outline:none;
+ color:#fff;
+ border-radius: 10px;
+ font-size: 1.2rem;
+ padding:12px;
+}
+.container button{
+    border:none;
+    outline:none;
+    padding:12px;
+    width:120px;
+    display:block;
+    color:#fff;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 50px;
+    background: linear-gradient(to left, #5d47ff,#9e22ff);
+}
+
+.container input:focus{
+    box-shadow : 0 0 5px rgb(61 207 255 / 50% );
+}
+.box{
+    position: relative;
+    padding:12px;
+}
+.box span{
+    display: inline-block; 
+    color:#fff;
+    font-size:1.2rem;
+}
+.box span#isPalindrome{
+    padding:6px 20px;
+    border-radius: 50px;
+ 
+}
+.box span#isPalindrome.true{
+   background: #58c295;
+}
+.box span#isPalindrome.false{
+    background: #b13a3a;
+ }
